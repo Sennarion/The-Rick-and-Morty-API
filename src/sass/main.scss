@@ -1,0 +1,33 @@
+.main {
+  padding: 20px 0;
+}
+
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.content-item {
+  display: flex;
+  flex-basis: calc((100% - 20px) / 2);
+  background-color: rgb(231, 231, 231);
+}
+
+.item-info {
+  padding: 15px;
+}
+
+.item-name {
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.item-text:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 18px;
+  font-weight: 700;
+}

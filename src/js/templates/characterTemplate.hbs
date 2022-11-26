@@ -1,0 +1,18 @@
+{{#each this}}
+  <li class='content-item'>
+    <img src='{{this.image}}' alt='{{this.name}}' width='280' />
+    <div class='item-info'>
+      <h2 class='item-name'>{{this.name}}</h2>
+      <p class='item-text'><span class='label'>Species:
+        </span>{{this.species}}</p>
+      <p class='item-text'><span class='label'>Status:
+        </span>{{this.status}}</p>
+      <p class='item-text'><span class='label'>Gender:
+        </span>{{this.gender}}</p>
+      <p class='item-text'><span class='label'>Last known location:
+        </span>{{this.location.name}}</p>
+      <p class='item-text'><span class='label'>First seen in:
+        </span>{{this.origin.name}}</p>
+    </div>
+  </li>
+{{/each}}

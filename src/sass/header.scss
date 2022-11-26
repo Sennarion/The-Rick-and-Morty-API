@@ -1,0 +1,67 @@
+.header {
+  padding: 20px 0;
+  background-color: rgb(53, 53, 53);
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 20px;
+  &:focus-within {
+    outline: 2px solid rgb(0, 111, 185);
+  }
+}
+
+.input {
+  min-width: 250px;
+  display: block;
+  border: none;
+  padding: 15px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button {
+  display: block;
+  width: 45px;
+  border: none;
+  cursor: pointer;
+
+  background-image: url(../images/search.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+.radiobuttons-wrapper {
+  border-left: 1px solid #fff;
+}
+
+.fieldset {
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+  border: none;
+}
+
+.fieldset-name {
+  font-size: 20px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.radio-label {
+  font-size: 16px;
+  display: inline-block;
+  margin: 0 10px;
+}
