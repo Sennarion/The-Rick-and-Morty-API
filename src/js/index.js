@@ -89,7 +89,6 @@ async function onGenderChange(e) {
     }
 
     refs.listRef.innerHTML = characterTemplate(results);
-    Notify.info(`We found ${info.count} matches for you`);
   } catch (err) {
     if (err.response.status === 404) {
       Notify.failure('No matches found');
@@ -122,10 +121,8 @@ async function onStatusChange(e) {
     if (info.pages > 1) {
       observer.observe(refs.observerRef);
     }
-    console.log(info);
 
     refs.listRef.innerHTML = characterTemplate(results);
-    Notify.info(`We found ${info.count} matches for you`);
   } catch (err) {
     if (err.response.status === 404) {
       Notify.failure('No matches found');
